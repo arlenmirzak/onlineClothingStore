@@ -1,0 +1,340 @@
+div, p {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.top-bar {
+    overflow: hidden;
+    background-color: rgb(254, 242, 255);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    height: 175px;
+    width: 525px;
+    border: black;
+}
+
+.topnav {
+    border: black;
+    display: flex;
+}
+  
+.topnav a {
+    color: rgb(73, 73, 73);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    flex: 1;
+}
+
+/* SEPARATE SECTION 
+******************************************************************************************************************************
+******************************************************************************************************************************
+*****************************************************************************************************************************/
+
+.searchBar {
+    border: black;
+    position: relative;
+    top: 110px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    border: .5px solid rgb(236, 119, 201);
+}
+
+.searchBar input {
+    padding: 5px 10px ;
+    background-color: rgb(253, 243, 250);
+}
+
+.search {
+    flex: 4;
+}
+
+.butt {
+    flex: 1;
+}
+
+/* SEPARATE SECTION 
+******************************************************************************************************************************
+******************************************************************************************************************************
+*****************************************************************************************************************************/
+
+.side-menu {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgb(236, 235, 235);
+    display: none;
+}
+
+.vertical-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.vertical-menu a {
+    background-color: rgba(255, 177, 232, 0.062); 
+    color: black;
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vertical-menu i {
+    color: grey;
+}
+  
+.vertical-menu a:hover {
+    background-color: rgba(253, 142, 220, 0.185);
+    transform: scale(1.05);
+}
+  
+.vertical-menu a.active {
+    background-color: rgb(236, 119, 201);
+    color: white;
+}
+
+/* SEPARATE SECTION 
+******************************************************************************************************************************
+******************************************************************************************************************************
+*****************************************************************************************************************************/
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    animation-name: color;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+  
+  /* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: rgb(255, 71, 141);
+    color: white;
+}
+
+#logo:hover {
+    animation-name: logo;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.fa-bars:hover {
+
+    animation-name: barscolor;
+    animation-fill-mode: forwards;
+    animation-duration: 750ms;
+}
+
+/*.search:hover {
+    animation-name: searchhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}*/
+
+.butt:hover {
+    cursor: pointer;
+    animation-name: buttcolor;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes color {
+    100% {
+        color: rgb(199, 32, 191);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes logo {
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes buttcolor {
+    100% {
+        color: rgb(199, 32, 191);
+        transform: scale(1.1);
+    }
+}
+
+/*@keyframes searchhover {
+    100% {
+        transform: scale(1.025);
+    }
+}*/
+
+@keyframes barscolor {
+    50% {
+        color: rgb(199, 32, 191);
+        transform: scale(1.1);
+    }
+    100% {
+        color: rgb(199, 32, 191);
+        transform: scale(1.2);
+    }
+}
+
+/* SEPARATE SECTION 
+******************************************************************************************************************************
+******************************************************************************************************************************
+*****************************************************************************************************************************/
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.226);
+}
+
+footer {
+    width: 100%;
+    height: 33%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+footer .left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 30px 0px 30px 70px;
+}
+
+footer .left div {
+    width: 13%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .left a {
+    flex: 1;
+    color: white;
+    text-decoration: none;
+}
+
+footer .left a:hover {
+    color: rgb(236, 119, 201);
+    transform: scale(1.025);
+}
+
+footer h4 {
+    padding-bottom: 10px;
+    color: rgb(155, 126, 158);
+}
+
+footer h4:hover {
+    transform: scale(1.025);
+    cursor: default;
+}
+
+footer .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    margin: 30px 70px 30px 0px;
+}
+
+footer .email {
+    align-self: center;
+}
+
+footer .email form {
+    display: flex;
+    border: .5px solid rgb(236, 119, 201);
+}
+
+.email input {
+    background-color: rgb(253, 243, 250);
+}
+
+form .mail {
+    flex: 4;
+    padding: 5px 10px;
+}
+
+form .button {
+    flex: 1;
+}
+
+/*.mail:hover {
+    animation-name: mailhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}*/
+
+.button:hover {
+    cursor: pointer;
+    animation-name: buttonhover;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes buttonhover {
+    100% {
+        color: rgb(199, 32, 191);
+        transform: scale(1.1);
+    }
+}
+
+/*@keyframes mailhover {
+    100% {
+        transform: scale(1.025);
+    }
+}*/
+
+footer .right .social {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social i {
+    color: white;
+    font-size: 56px;
+    margin: 10px;
+}
+
+.social i:hover {
+    color: rgb(236, 119, 201);
+}

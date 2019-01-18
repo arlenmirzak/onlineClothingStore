@@ -1,0 +1,22 @@
+{
+  "name": "onlineclothingstore",
+  "version": "1.0.0",
+  "description": "A sample online clothing store",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "clothing",
+    "store"
+  ],
+  "author": "Arlen M.",
+  "license": "ISC"
+}
