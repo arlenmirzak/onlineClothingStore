@@ -8,5 +8,5 @@ app.use(express.static('public'));
 
 app.use('/', router);
 
-app.listen(80, 'wearit.club');
+app.listen(8080, 'wearit.club');
 console.log('now listening on port 8080');
